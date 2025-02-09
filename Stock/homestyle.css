@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+body {
+    background: url('2.jpg') no-repeat center/cover;
+    color: #ffffff;
+}
+
+/* Ticker */
+.ticker {
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    color: #00ff88;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #00ff88;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+.hero span {
+    color: #00ff88;
+}
+
+/* Button Animation */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #00ff88;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: #00ff88;
+    transform: scale(1.1);
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Market Section (Side-by-Side) */
+.market-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.crypto, .stocks {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 40%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
